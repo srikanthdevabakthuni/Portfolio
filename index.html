@@ -482,13 +482,16 @@
 
     // Skills section
 
-    window.onload = function () {
-      const skillBars = document.querySelectorAll(".skill-bar");
-      skillBars.forEach(bar => {
-        const skillLevel = bar.getAttribute("data-skill");
-        bar.style.width = skillLevel + "%";
-      })
-    }
+   document.addEventListener("DOMContentLoaded", function () {
+
+  const bars = document.querySelectorAll(".skill-bar");
+
+  bars.forEach(bar => {
+    const value = bar.getAttribute("data-skill");
+    bar.style.width = value + "%";
+  });
+
+});
   </script>
 
 
