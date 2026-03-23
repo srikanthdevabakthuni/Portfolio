@@ -85,3 +85,15 @@ body{
   border-radius: 10px;
   transition: width 1.5s ease-in-out;
 }
+/* FIX MODAL VISIBILITY */
+.modal-content {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-radius: 10px;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  color: #000 !important;
+}
