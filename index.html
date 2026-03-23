@@ -71,14 +71,16 @@
           </h1>
 
           <br>
-          <h2 class="display-6 fw-semibold">Aspiring Software Engineer</h2>
+          <h2 class="display-6 fw-semibold">Aspiring <span class="typing"> "Software Engineer"</span></h2>
           <p class="lead fw-normal">
             CSE (AI & ML) graduate skilled in Java, Python, and Web Technologies (HTML, CSS, MySQL). Experienced in
             cloud security and machine learning projects, with strong problem-solving and teamwork abilities.
           </p>
 
-          <a href="#projects" class="btn btn-info me-2">View My Work</a>
-          <a href="#contact" class="btn btn-outline-info">Contact Me</a>
+          <a href="assets/SRIKANTH-RESUME..pdf" download class="btn btn-info me-3">
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline-info">Hire Me</a>
 
 
 
@@ -94,10 +96,8 @@
   <section class="container-fluid p-5 text-white" id="about">
     <div class="container">
       <h2 class="display-4 fw-bold text-center">About Me</h2>
-      <p class=" lead fw-normal mt-5 text-center">I am a Computer Science Engineering (AI & ML) graduate with a strong
-        interest in building efficient and scalable applications. I have hands-on experience in Java, Python, and web
-        technologies, along with projects in cloud security and machine learning. I enjoy solving real-world problems,
-        learning new technologies, and working collaboratively to create impactful solutions.</p>
+      <p class=" lead fw-normal mt-5 text-center" id="dynamic"></p>
+
 
 
       <!-- Highlight Cards -->
@@ -150,63 +150,86 @@
 
   <section id="skills" class="py-5 text-white">
     <div class="container">
-      <!-- Section Heading -->
+
       <h2 class="display-4 fw-bold text-center mb-4">My Skills</h2>
       <h4 class="fw-normal text-center mb-5">
         Technologies and tools I’m proficient in.
       </h4>
 
-      <div class="row g-4 text-center">
+      <div class="row">
 
-        <!-- Skill 1 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 shadow-sm py-4">
-            <i class="bi bi-cup-hot-fill display-4 text-danger mb-3"></i>
-            <h5 class="card-title">Java</h5>
+        <!-- Left Column -->
+        <div class="col-md-6">
+
+          <div class="mb-4">
+            <div class="d-flex justify-content-between">
+              <span>Java</span>
+              <span>85%</span>
+            </div>
+            <div class="custom-bar">
+              <div class="skill-bar custom-fill bg-danger" data-skill="85"></div>
+            </div>
           </div>
+
+          <div class="mb-4">
+            <div class="d-flex justify-content-between">
+              <span>Python</span>
+              <span>80%</span>
+            </div>
+            <div class="custom-bar">
+              <div class="skill-bar custom-fill bg-warning" data-skill="80"></div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <div class="d-flex justify-content-between">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="custom-bar">
+              <div class="skill-bar custom-fill bg-primary" data-skill="90"></div>
+            </div>
+          </div>
+
         </div>
 
-        <!-- Skill 2 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 shadow-sm py-4">
-            <i class="bi bi-filetype-py display-4 text-warning mb-3"></i>
-            <h5 class="card-title">Python</h5>
-          </div>
-        </div>
+        <!-- Right Column -->
+        <div class="col-md-6">
 
-        <!-- Skill 3 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 shadow-sm py-4">
-            <i class="bi bi-file-code-fill display-4 text-primary mb-3"></i>
-            <h5 class="card-title">HTML</h5>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between">
+              <span>CSS</span>
+              <span>85%</span>
+            </div>
+            <div class="custom-bar">
+              <div class="skill-bar custom-fill bg-success" data-skill="85"></div>
+            </div>
           </div>
-        </div>
 
-        <!-- Skill 4 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 shadow-sm py-4">
-            <i class="bi bi-paint-bucket display-4 text-success mb-3"></i>
-            <h5 class="card-title">CSS</h5>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between">
+              <span>MySQL</span>
+              <span>75%</span>
+            </div>
+            <div class="custom-bar">
+              <div class="skill-bar custom-fill bg-info" data-skill="75"></div>
+            </div>
           </div>
-        </div>
 
-        <!-- Skill 5 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 shadow-sm py-4">
-            <i class="bi bi-database-fill display-4 text-info mb-3"></i>
-            <h5 class="card-title">MySQL</h5>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between">
+              <span>AI & ML</span>
+              <span>70%</span>
+            </div>
+            <div class="custom-bar">
+              <div class="skill-bar custom-fill bg-light" data-skill="70"></div>
+            </div>
           </div>
-        </div>
 
-        <!-- Skill 6 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 shadow-sm py-4">
-            <i class="bi bi-cpu-fill display-4 text-dark mb-3"></i>
-            <h5 class="card-title">AI & ML</h5>
-          </div>
         </div>
 
       </div>
+
     </div>
   </section>
   <!--Projects-->
@@ -224,9 +247,9 @@
 
         <!-- Project 1 -->
         <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm d-flex flex-column">
             <img src="assets/cloud security.avif" class="card-img-top" alt="Cloud Security">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title text-center">
                 Secure Data Sharing in Mobile Cloud
               </h5>
@@ -238,15 +261,47 @@
               <p class="text-center fw-normal">
                 <strong>Tech:</strong> Cloud Computing, Security, CPABE
               </p>
+              <div class="card-footer mt-auto">
+              <button class="btn btn-info d-block mx-auto" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                View Details
+              </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT MODAL -->
+        <div class="modal fade" id="projectModal1" >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Secure Data Sharing in Mobile Cloud</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body">
+                <p>
+                  Developed a secure data-sharing system using CPABE encryption.
+                  Optimized performance by offloading computations to proxy servers
+                  and implemented lazy revocation for efficient access control.
+                </p>
+                <p><strong>Tech Stack:</strong> Cloud Computing, Security, CPABE</p>
+              </div>
+
+              <div class="modal-footer">
+                <a href="" target="_blank" class="btn btn-info">View Project</a>
+              </div>
+
             </div>
           </div>
         </div>
 
         <!-- Project 2 -->
         <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm d-flex flex-column">
             <img src="assets/ML.jpg" class="card-img-top" alt="ML Project">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title text-center">
                 Data Augmentation using PGGAN & VGG16
               </h5>
@@ -258,7 +313,36 @@
               <p class="text-center fw-normal">
                 <strong>Tech:</strong> Python, Deep Learning, PGGAN, VGG16
               </p>
+              <div class="card-footer mt-auto">
+                <button class="btn btn-info d-block mx-auto" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                  View Details
+                </button>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="projectModal2">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Data Augmentation using PGGAN & VGG16</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body">
+                <p>
+                  Improved image classification accuracy using PGGAN-generated data.
+                  Applied VGG16 model to enhance performance and reduce overfitting
+                  on limited datasets.
+                </p>
+                <p><strong>Tech Stack:</strong> Python, Deep Learning, PGGAN, VGG16</p>
+              </div>
+
+              <div class="modal-footer">
+                <a href="" target="_blank" class="btn btn-info">View Project</a>
+              </div>
           </div>
         </div>
 
@@ -269,93 +353,93 @@
   <!--Certifications-->
 
   <section class="py-5 text-white" id="certifications">
-  <div class="container">
-    
-    <h2 class="display-4 fw-bold text-center" style="margin-bottom: 20px;">Certifications</h2>
-    <h4 class="fw-normal text-center mb-5" style="color:#d1d1d1;">
-      Certifications that validate my technical skills and knowledge.
-    </h4>
+    <div class="container">
 
-    <div class="row g-4 text-center">
+      <h2 class="display-4 fw-bold text-center" style="margin-bottom: 20px;">Certifications</h2>
+      <h4 class="fw-normal text-center mb-5" style="color:#d1d1d1;">
+        Certifications that validate my technical skills and knowledge.
+      </h4>
 
-      <!-- Cert 1 -->
-      <div class="col-md-3">
-        <div class="card h-100 shadow-sm py-4">
-          <i class="bi bi-award-fill display-4 text-warning mb-3"></i>
-          <h6>Introduction to Data Science</h6>
-          <p class="small">Infosys Springboard</p>
+      <div class="row g-4 text-center">
+
+        <!-- Cert 1 -->
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm py-4">
+            <i class="bi bi-award-fill display-4 text-warning mb-3"></i>
+            <h6>Introduction to Data Science</h6>
+            <p class="small">Infosys Springboard</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Cert 2 -->
-      <div class="col-md-3">
-        <div class="card h-100 shadow-sm py-4">
-          <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
-          <h6>C Programming</h6>
-          <p class="small">Infosys Springboard</p>
+        <!-- Cert 2 -->
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm py-4">
+            <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+            <h6>C Programming</h6>
+            <p class="small">Infosys Springboard</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Cert 3 -->
-      <div class="col-md-3">
-        <div class="card h-100 shadow-sm py-4">
-          <i class="bi bi-phone display-4 text-success mb-3"></i>
-          <h6>Android App Development</h6>
-          <p class="small">Kotlin Training</p>
+        <!-- Cert 3 -->
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm py-4">
+            <i class="bi bi-phone display-4 text-success mb-3"></i>
+            <h6>Android App Development</h6>
+            <p class="small">Kotlin Training</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Cert 4 -->
-      <div class="col-md-3">
-        <div class="card h-100 shadow-sm py-4">
-          <i class="bi bi-journal-richtext display-4 text-danger mb-3"></i>
-          <h6>Research Publication</h6>
-          <p class="small">PGGAN & VGG16</p>
+        <!-- Cert 4 -->
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm py-4">
+            <i class="bi bi-journal-richtext display-4 text-danger mb-3"></i>
+            <h6>Research Publication</h6>
+            <p class="small">PGGAN & VGG16</p>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!--Contact-->
 
   <section class="container-fluid p-5 text-white" id="contact">
-  <h3 class="display-4 fw-bold text-center mb-3">📩 Get In Touch</h3>
-  <p class="text-center fw-normal">
-    Feel free to reach out through this form or connect with me on social media.
-  </p>
+    <h3 class="display-4 fw-bold text-center mb-3">📩 Get In Touch</h3>
+    <p class="text-center fw-normal">
+      Feel free to reach out through this form or connect with me on social media.
+    </p>
 
-  <div class="col-lg-6 shadow p-5 mx-auto">
-    
-    <!-- FIXED FORM -->
-    <form name="contact" onsubmit="return SubmitHandler(event)">
-      
-      <input type="text" class="form-control mb-3" name="username" placeholder="Enter name">
-      <p id="nameError" class="text-danger px-2 fw-semibold"></p>
+    <div class="col-lg-6 shadow p-5 mx-auto">
 
-      <input type="email" class="form-control mb-3" name="email" placeholder="Enter email">
-      <p id="emailError" class="text-danger px-2 fw-semibold"></p>
+      <!-- FIXED FORM -->
+      <form name="contact" onsubmit="return SubmitHandler(event)">
 
-      <!-- FIXED: added name -->
-      <textarea name="message" class="form-control" placeholder="Write your message..." rows="5" required></textarea>
-      <p id="messageError" class="text-danger px-2 fw-semibold"></p>
+        <input type="text" class="form-control mb-3" name="username" placeholder="Enter name">
+        <p id="nameError" class="text-danger px-2 fw-semibold"></p>
 
-      <div class="row">
-        <div class="col-6">
-          <button class="btn btn-primary w-100" type="submit"><b>Send message</b></button>
+        <input type="email" class="form-control mb-3" name="email" placeholder="Enter email">
+        <p id="emailError" class="text-danger px-2 fw-semibold"></p>
+
+        <!-- FIXED: added name -->
+        <textarea name="message" class="form-control" placeholder="Write your message..." rows="5" required></textarea>
+        <p id="messageError" class="text-danger px-2 fw-semibold"></p>
+
+        <div class="row">
+          <div class="col-6">
+            <button class="btn btn-primary w-100" type="submit"><b>Send message</b></button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-secondary w-100" type="reset"><b>Reset</b></button>
+          </div>
         </div>
-        <div class="col-6">
-          <button class="btn btn-secondary w-100" type="reset"><b>Reset</b></button>
-        </div>
-      </div>
 
-    </form>
-  </div>
-</section>
+      </form>
+    </div>
+  </section>
 
-<!-- KEEP SCRIPT SEPARATE -->
-<script src="validate.js"></script>
+  <!-- KEEP SCRIPT SEPARATE -->
+  <script src="validate.js"></script>
 
   <!--Resume-->
 
@@ -387,6 +471,26 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // About section
+    const aboutData = {
+      description: "I am a Computer Science Engineering (AI & ML) graduate with a strong interest in building efficient and scalable applications. I have hands-on experience in Java, Python, and web technologies, along with projects in cloud security and machine learning. I enjoy solving real-world problems, learning new technologies, and working collaboratively to create impactful solutions."
+    };
+
+    document.getElementById("dynamic").innerText = aboutData.description;
+
+    // Skills section
+
+    window.onload = function () {
+      const skillBars = document.querySelectorAll(".skill-bar");
+      skillBars.forEach(bar => {
+        const skillLevel = bar.getAttribute("data-skill");
+        bar.style.width = skillLevel + "%";
+      })
+    }
+  </script>
+
 
 
 
