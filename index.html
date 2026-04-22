@@ -55,6 +55,12 @@
 
 
       </div>
+             </div>
+
+<!-- ADD THIS BELOW -->
+<button onclick="toggleTheme()" class="btn btn-outline-light ms-3">
+  🌙
+</button>
     </nav>
   </header>
 
@@ -71,7 +77,7 @@
           </h1>
 
           <br>
-          <h2 class="display-6 fw-semibold">Aspiring <span class="typing">Software Engineer</span></h2>
+          <h2 class="display-6 fw-semibold"> <span class="typing">Aspiring Software Engineer</span></h2>
           <p class="lead fw-normal">
             CSE (AI & ML) graduate skilled in Java, Python, and Web Technologies (HTML, CSS, MySQL). Experienced in
             cloud security and machine learning projects, with strong problem-solving and teamwork abilities.
@@ -477,16 +483,25 @@
 
     // Skills section
 
-   document.addEventListener("DOMContentLoaded", function () {
-
+   window.addEventListener("scroll", () => {
+  const skills = document.querySelector("#skills");
   const bars = document.querySelectorAll(".skill-bar");
 
-  bars.forEach(bar => {
-    const value = bar.getAttribute("data-skill");
-    bar.style.width = value + "%";
-  });
-
+  if (skills.getBoundingClientRect().top < window.innerHeight) {
+    bars.forEach(bar => {
+      bar.style.width = bar.getAttribute("data-skill") + "%";
+    });
+  }
 });
+           const roles = ["Web Developer", "UI Designer"];
+let i = 0;
+
+function changeRole() {
+  document.querySelector(".typing").textContent = roles[i];
+  i = (i + 1) % roles.length;
+}
+
+setInterval(changeRole, 2000);
   </script>
 
 
